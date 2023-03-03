@@ -1,0 +1,114 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: #222b34;
+    padding: 0;
+    margin: 0;
+    color: white;
+    font-family: Calibri , sans-serif;
+}
+
+.wrapper__main {
+    padding:5rem 0;
+    width:100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.visualiser {
+}
+
+.visualiser__sort-selector {
+    margin: 10px 0;
+}
+
+.btn_selector {
+    margin:0 5px;
+    background: white;
+    color: black;
+    outline: none;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+}
+.btn_selector:hover {
+    background: #8f6cf5;
+    color: white;
+}
+
+.main__visualiser {
+    position: relative;
+    height: 500px;
+    border: 1px solid white;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: flex-end;
+    justify-content: space-around;
+    align-items: flex-end;
+    overflow: hidden;
+    color: #6cff7d;
+}
+.stats {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    inset: 1px 1px;
+    background: rgba(0,0,0,0.5);
+    height: 80px;
+    padding: 10px 15px;
+    width: 250px;
+    color: white;
+    z-index: 99;
+}
+.bar {
+    background: white;
+    border: 1px solid black;
+}
+.bar_data{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    word-break: break-all;
+    color: #3d3d3d;
+}
+.selected {
+    background: #694eb4;
+    color: white;
+}
+
+.control_btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 10px;
+}
+.start_btn {
+    padding: 10px 20px;
+    border-radius: 25px;
+    background: #68b44e;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: 100ms ease-in-out;
+}
+.randomize_btn {
+    padding: 10px 20px;
+    border-radius: 25px;
+    background: #68b44e;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: 100ms ease-in-out;
+}
+.start_btn:hover ,.randomize_btn:hover{
+    padding: 10px 40px;
+}
