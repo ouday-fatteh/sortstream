@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<link href="style.css" rel="stylesheet" type="text/css" />
+		<meta charset="UTF-8">
+		<title>SortStream</title>
+		<script src="app.js" defer></script>
+	</head>
+	<body>
+		<div class="wrapper__main">
+			<h1>SortStream - Watch array sorting flow in real-time!</h1>
+			<div class="visualiser">
+				<div class="visualiser__sort-selector">
+					<button class="btn_selector" tabindex="0">Selection sort</button>
+					<button class="btn_selector" tabindex="1">Bubble sort</button>
+					<button class="btn_selector" tabindex="2">Insertion sort</button>
+					<button class="btn_selector" tabindex="3">Merge sort</button>
+					<button class="btn_selector" tabindex="4">Quick sort</button>
+					<button class="btn_selector" tabindex="5">Heap sort</button>
+					<button class="btn_selector" tabindex="6">Counting sort</button>
+					<button class="btn_selector" tabindex="7">Radix sort</button>
+					<button class="btn_selector" tabindex="8">Bucket sort</button>
+				</div>
+				<div class="control_btn">
+					<div>
+					<input type="number" max="500" min="1" value="10" id="range"/>
+					<button class="randomize_btn">Randomize Data</button>
+					</div>
+					<div>
+						<select title="Visualisation speed" id="selection">
+							<option value="1500">Slow</option>
+							<option selected value="750">Medium</option>
+							<option value="350">Fast</option>
+							<option value="100">Too Fast</option>
+							<option value="0">RealTime</option>
+						</select>
+					<button class="start_btn">Start Sorting</button>
+					</div>
+				</div>
+				<div style="position: relative">
+				<div id="visualiser" class="main__visualiser">
+
+				</div>
+				<div class="stats">
+					<div style="dipslay:flex">Delta : <span id="time"></span></div><br/>
+					<div style="dipslay:flex">Interpolations : <span id="interpolations"></span></div>
+				</div>
+				</div>
+			</div>
+
+		</div>
+	</body>
+</html>
